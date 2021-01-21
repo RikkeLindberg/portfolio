@@ -1,0 +1,30 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: $color-light;
+
+  &--cta {
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+
+    &:hover,
+    &:focus {
+      background-position: right center;
+      color: $color-light;
+    }
+  }
+}

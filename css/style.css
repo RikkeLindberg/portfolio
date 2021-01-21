@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -20,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
 }
 
 main {
@@ -28,6 +30,7 @@ main {
 
 section {
   min-height: 100vh;
+  position: relative;
 }
 
 footer {
@@ -39,15 +42,15 @@ a {
   cursor: pointer;
 }
 
-.header {
-  background-color: #1c1c1c;
-}
-
 .nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+  width: 100%;
+  background-color: #1c1c1c;
+  z-index: 100;
   /*&__logo {
     font-family: $font-primary;
     font-size: 2.8rem;
@@ -165,6 +168,58 @@ a {
     position: absolute;
     display: block;
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  background-image: linear-gradient(to right, rgba(28, 28, 28, 0.9), rgba(28, 28, 28, 0.9)), url("https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #f1f1f1;
+}
+
+.btn--cta {
+  background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+}
+
+.btn--cta:hover, .btn--cta:focus {
+  background-position: right center;
+  color: #f1f1f1;
+}
+
+.heading--primary {
+  font-size: 5rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 65rem;
+  line-height: 5.5rem;
+  color: #f1f1f1;
+  margin-bottom: 3rem;
+}
+
+.heading--primary span {
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 .footer {

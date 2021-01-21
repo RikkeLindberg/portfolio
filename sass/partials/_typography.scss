@@ -1,0 +1,16 @@
+.heading {
+  &--primary {
+    font-size: 5rem;
+    font-weight: 700;
+    width: 100%;
+    max-width: 65rem;
+    line-height: 5.5rem;
+    color: $color-light;
+    margin-bottom: 3rem;
+
+    & span {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+  }
+}

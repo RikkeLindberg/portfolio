@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -21,6 +22,7 @@ body {
   flex-direction: column;
 
   font-family: $font-primary;
+  background-color: $color-light;
 }
 
 main {
@@ -29,6 +31,7 @@ main {
 
 section {
   min-height: 100vh;
+  position: relative;
 }
 
 footer {

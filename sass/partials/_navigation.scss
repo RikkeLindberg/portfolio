@@ -1,12 +1,12 @@
-.header {
-  background-color: $color-primary;
-}
-
 .nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+  width: 100%;
+  background-color: $color-primary;
+  z-index: 100;
 
   /*&__logo {
     font-family: $font-primary;

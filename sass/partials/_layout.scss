@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  background-image: linear-gradient(
+      to right,
+      (rgba($color-primary, 0.9)),
+      (rgba($color-primary, 0.9))
+    ),
+    url("https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
