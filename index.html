@@ -3,8 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Rikke Lindberg</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="nav__toggle">
+          <span class="nav-toggle__icon">&nbsp;</span>
+        </label>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#home">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#portfolio">portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-icon">
+          <a class="nav-icon__link" href="">
+            <i class="fab fa-github nav-icon__icon"></i>
+          </a>
+          <a class="nav-icon__link" href="">
+            <i class="fab fa-linkedin nav-icon__icon"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <h1 class="heading heading--primary">Hello, I'm Rikke Lindberg</h1>
+        <h2 class="heading heading--secondary">Front-End Developer</h2>
+        <a class="btn btn--cta" href="#portfolio">See my projects</a>
+      </section>
+
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+
+    <footer class="footer">
+      <small class="footer__copyright">rikke lindberg &copy; 2021</small>
+    </footer>
+  </body>
 </html>
