@@ -55,17 +55,154 @@
     <main>
       <section class="banner container" id="home">
         <div>
-          <h1 class="heading heading--primary">
-            Hello, I'm Rikke Lindberg
-            <span>Front-End Developer</span>
-          </h1>
+          <h1 class="heading heading--primary">Hello, I'm Rikke Lindberg</h1>
+          <h2 class="heading heading--sub">Front-End Developer</h2>
           <a class="btn btn--cta" href="#portfolio">See my projects</a>
         </div>
       </section>
 
-      <section id="about"></section>
-      <section id="portfolio"></section>
-      <section id="contact"></section>
+      <section class="container padding" id="about">
+        <h2 class="heading heading--secondary">About me</h2>
+        <div class="about">
+          <img
+            class="about__img"
+            src="img/IMG_20181027_205537_325.jpg"
+            alt="profile image"
+          />
+          <div>
+            <p class="text about__text">
+              I'm a Front-End Developer student at Noroff (Aug 2019 to June
+              2021). Based in North of Norway, Vesterålen. Always open to learn
+              and take on new challenges.
+            </p>
+            <a class="about__link" href="#contact">Feel free to contact me →</a>
+          </div>
+        </div>
+
+        <div class="about-icons">
+          <i class="fab fa-html5 about-icons__icon"></i>
+          <i class="fab fa-css3-alt about-icons__icon"></i>
+          <i class="fab fa-js about-icons__icon"></i>
+          <i class="fab fa-bootstrap about-icons__icon"></i>
+          <i class="fab fa-sass about-icons__icon"></i>
+          <i class="fab fa-react about-icons__icon"></i>
+          <i class="fab fa-wordpress about-icons__icon"></i>
+        </div>
+      </section>
+
+      <section class="container padding" id="portfolio">
+        <h2 class="heading heading--secondary">Portfolio</h2>
+
+        <div class="portfolio">
+          <div class="portfolio-card portfolio-card--re-cycle">
+            <h3 class="heading heading--tertiary">Re-cycle</h3>
+            <div>
+              <a class="btn btn--card" href="">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+              <a class="btn btn--card" href="">
+                <i class="fas fa-external-link-alt"></i>
+                View site
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-card portfolio-card--re-cycle">
+            <h3 class="heading heading--tertiary">Semester Project 1</h3>
+            <div>
+              <a class="btn btn--card" href="">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+              <a class="btn btn--card" href="">
+                <i class="fas fa-external-link-alt"></i>
+                View site
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-card portfolio-card--re-cycle">
+            <h3 class="heading heading--tertiary">
+              Javascript Course Assignment
+            </h3>
+            <div>
+              <a class="btn btn--card" href="">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+              <a class="btn btn--card" href="">
+                <i class="fas fa-external-link-alt"></i>
+                View site
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-card portfolio-card--re-cycle">
+            <h3 class="heading heading--tertiary">Re-cycle</h3>
+            <div>
+              <a class="btn btn--card" href="">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+              <a class="btn btn--card" href="">
+                <i class="fas fa-external-link-alt"></i>
+                View site
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-card portfolio-card--re-cycle">
+            <h3 class="heading heading--tertiary">Semester Project 1</h3>
+            <div>
+              <a class="btn btn--card" href="">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+              <a class="btn btn--card" href="">
+                <i class="fas fa-external-link-alt"></i>
+                View site
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-card portfolio-card--re-cycle">
+            <h3 class="heading heading--tertiary">
+              Javascript Course Assignment
+            </h3>
+            <div>
+              <a class="btn btn--card" href="">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+              <a class="btn btn--card" href="">
+                <i class="fas fa-external-link-alt"></i>
+                View site
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container padding contact" id="contact">
+        <h2 class="heading heading--secondary">Contact</h2>
+        <form class="contact-form" id="form">
+          <input type="text" placeholder="Name" id="name" />
+          <input type="text" placeholder="Email" id="email" />
+          <textarea
+            placeholder="your message"
+            type="text"
+            name="message"
+          ></textarea>
+          <button class="btn btn--submit" type="submit">
+            Submit
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div id="success">
+            Your message was sent successfully. Thank you! 😊
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">
